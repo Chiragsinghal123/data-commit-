@@ -1,0 +1,1 @@
+ami , one instance , crateimage , click ami ,copy / another instance / ami click launch instance 
