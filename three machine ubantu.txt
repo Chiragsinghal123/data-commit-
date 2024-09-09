@@ -1,0 +1,46 @@
+efs
+first 3 machin created node1 - Linux,node2 - redhat, node3 - ubantu 
+1 . sudo su -
+cat /etc/os-release
+ rpmquery nfs-utils
+
+2.  sudo su - 
+   cat /etc/os-release
+    rpmquery nfs-utils
+   yum install nfs-utils -y
+
+3. sudo su -
+   apt update
+   apt install nfs-common
+
+search efs , create efs network security grp change click attach and copy commd 
+ubantu bale 
+mkdir /data 
+paste commd /data
+cd /data
+touch data.txt{1..10}
+ll
+add swecurity network changes {nfs}security grp 
+ 
+
+ apt update
+    2  apt install nfs-common
+    3  history
+    4  mkdir data
+    5  cd data
+    6  cd /data
+    7  cd
+df -h
+   14  pwd
+   15  cd ./data
+   16  cd /data
+   17  cd /
+   18  cd
+   19  cd /data
+   20  cd ./data
+   21  touch cs.txt{1..40}
+   22  ll
+   23  history
+
+
+
