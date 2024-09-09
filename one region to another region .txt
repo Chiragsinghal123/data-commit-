@@ -1,0 +1,24 @@
+ebs
+one region to another region 
+one instance and one volume   
+ lsblk
+    2  mkdir /data
+    3  blkid
+    4  mkfs.ext4 /dev/xvdb
+    5  vim /etc/fstab  {UUID=5649db6c-9159-42a6-90d3-85c8720c5954  /data        ext4    defaults        0       0 }
+    6  blkid
+    7  vim /etc/fstab
+    8  df -h
+    9  reboot
+   10  df -h
+   11  history
+
+select volume,create snapshot ,selct snapshot ,copy snapshot another region m bhejna h {attach volume instances}
+
+second instance another region 
+lsblk
+    2  mkdir /data2
+    3  mount /dev/xvdb /data2
+    4  cd /data2
+    5  ll
+    6  history	
