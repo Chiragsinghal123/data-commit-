@@ -1,0 +1,36 @@
+vpc ---
+
+click vpc 10.0.0.0/16
+click igw attach vpc 
+click subnet publiv 10.0.0.0/24, private 10.0.1.0/24
+route 
+natgateway ,public public 
+port http ,ipv4
+
+one instance is this work   
+sudo su -
+yum install httpd -y
+cd /var/www/html/
+echo "server" > index.html
+ cd
+systemctl start httpd
+systemctl enable httpd
+ cd /var/www/html/
+vim mainkey.pem{key name downloads m dekhne ka }
+ chmod 400 mainkey.pem {name key }
+
+
+then instance 2 private 
+first ssh command 
+then yum install httpd
+ping {check krkre dekh rhe ip copy krni h ping k bad }
+{paring kn liye same cheej bana h }
+ssh-keygen
+vim authorized_keys
+
+
+second instance is this same upper ;-
+ssh-keygen
+rm -rf known_hosts{dono delete krni h}
+echo hello world > abc.txt
+
