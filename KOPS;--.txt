@@ -31,6 +31,7 @@ chmod +x ./kops
 sudo mv ./kops /usr/local/bin/
 
 Create an IAM user/role with Route53, EC2, IAM and S3 full access
+**{s3full,ec2,iam,vpc,route53 fullaccess}
 
 Attach IAM role to ubuntu server
 
