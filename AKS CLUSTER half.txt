@@ -1,0 +1,27 @@
+AKS CLUSTER 
+t2midium[use]
+BY EC2 MACHINE
+Linux machine 
+
+
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+sudo dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm
+
+sudo dnf install azure-cli
+
+az login
+
+az ad sp create-for-rbac --name "myApp" --role contributor --scopes /subscriptions/<subscription-id> --sdk-auth
+
+ az group create --name MY_RESOURCE --location "France Central"
+
+az aks create --resource-group MY_RESOURCE --name MY_AKS_CLUSTER --node-count 1 --generate-ssh-keys
+
+az aks install-cli
+
+az aks get-credentials --resource-group MY_RESOURCE --name MY_AKS_CLUSTER
+
+
+
+
